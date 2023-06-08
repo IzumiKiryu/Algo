@@ -12,19 +12,36 @@ displayLast(tab2);
 // Écrire une fonction qui prend un tableau en entrée et retourne le dernier élément de ce tableau.
 
 function returnLast (tab){
-    return (tab[tab.length-1]);
+    return tab[tab.length-1];
 }
 
-returnLast(tab1);
+console.log (returnLast(tab1));
 
 // Écrire une fonction qui prend en entrée un tableau et qui retourne le minimum de ce tableau.
-function displayMin (tab){
-    return (tab(tab.));
-}
+let t =[7,6,2,10,4];
 
-displayMin(tab1);
+function returnMin(t){
+    let min=t[0];
+    for (let i=0; i<t.length;i++){
+        if (t[i]<min){
+            min=t[i];
+        }
+    }
+    return min;
+}
+console.log (returnMin(t));
 
 // Écrire une fonction qui prend en entrée un tableau et qui retourne le maximum de ce tableau.
+function returnMax(t){
+    let max=t[0];
+    for (let i=0; i<t.length;i++){
+        if (t[i]>max){
+            max=t[i];
+        }
+    }
+    return max;
+}
+console.log (returnMax(t));
 
 // [Plus difficile - bonus] Écrire une fonction qui prend en entrée un tableau de nombres positifs et qui retourne la deuxième plus grande valeur du tableau.
 
